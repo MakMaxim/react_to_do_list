@@ -1,0 +1,10 @@
+.header {
+   padding: 3px 0;
+   text-align: center;
+   color: rgb(0, 71, 1);
+   border-bottom: 3px solid rgb(0, 71, 1);
+   font-size: 28px;
+   &__quantity {
+      margin: 7px 0 15px;
+   }
+}

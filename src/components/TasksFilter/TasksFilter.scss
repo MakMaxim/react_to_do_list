@@ -1,0 +1,14 @@
+.tasks-filter {
+   display: flex;
+   flex-direction: column;
+   margin-top: 15px;
+   &__input {
+      margin: 15px 0;
+   }
+   &__select {
+      cursor: pointer;
+      width: 160px;
+      height: 24px;
+      margin: 10px 0;
+   }
+}
