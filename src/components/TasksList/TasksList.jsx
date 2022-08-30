@@ -8,7 +8,7 @@ function TasksList({ todos, editTodo, removeTask, toggleTask }) {
       <div className="list">
          <TransitionGroup>
             {todos.map((task, index) => (
-               <CSSTransition key={task.id} timeout={500} classNames="task">
+               <CSSTransition key={task.id} timeout={400} classNames="task">
                   <Task
                      task={task}
                      index={index}

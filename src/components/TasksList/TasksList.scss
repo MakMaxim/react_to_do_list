@@ -3,12 +3,12 @@
 }
 .task-enter-active {
    transform: translateX(0px);
-   transition: all 500ms ease-in;
+   transition: all 400ms ease-in;
 }
 .task-exit {
    opacity: 1;
 }
 .task-exit-active {
    transform: translateX(-250px);
-   transition: all 500ms ease-in;
+   transition: all 400ms ease-in;
 }

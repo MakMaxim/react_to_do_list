@@ -11,4 +11,7 @@
    &:hover {
       background-color: rgb(0, 218, 4);
    }
+   @media (max-width: 479.98px) {
+      margin-left: 10px;
+   }
 }
