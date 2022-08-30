@@ -11,4 +11,8 @@
       height: 24px;
       margin: 10px 0;
    }
+   &__search {
+      display: flex;
+      justify-content: space-between;
+   }
 }
