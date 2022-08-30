@@ -2,15 +2,21 @@ import React from 'react';
 import Form from './components/Form/Form';
 import Header from './components/Header/Header';
 import './App.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TasksList from './components/TasksList/TasksList';
 import TasksFilter from './components/TasksFilter/TasksFilter';
 import { useTasks } from './hooks/useTasks';
 
 function App() {
-   const [todos, setTodos] = useState([]);
+   const [todos, setTodos] = useState(
+      JSON.parse(localStorage.getItem('todos')) || []
+   );
    const [filter, setFilter] = useState({ sort: '', query: '' });
    const sortedAndSearchedTasks = useTasks(todos, filter.sort, filter.query);
+
+   useEffect(() => {
+      localStorage.setItem('todos', JSON.stringify(todos));
+   }, [todos]);
 
    const addTask = (userInput) => {
       if (userInput) {
